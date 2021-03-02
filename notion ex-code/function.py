@@ -29,3 +29,15 @@ def result(one,two):
 	return one+two, one*two
 result(1,3)
 
+def me(name,old,man=True):      # man=True로 매개변수 초기값 설정
+	print("이름은 %s" %name)
+	print("나이는 %d살" %old)
+	if man: print("남자")
+	else: print("여자")
+me("arim",24) 
+
+
+# 
+# ※ lambda 예약어로 만든 함수는 return 명령어가 없어도 결괏값을 돌려준다.
+add= lambda a,b: a+b
+print(add(3,4))
